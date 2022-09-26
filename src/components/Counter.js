@@ -27,7 +27,7 @@ const Counter = ({count, increment, decrement}) => {
 const mapStateToProps = (state)=>{
     return {
         ...state,
-        count:state.value
+        count:state.counterReducer.value
     }
     // must akta object return korte hbe
 }
